@@ -29,8 +29,12 @@ body{
 }
 
 header {
-  padding: 0 1em;
- 
+    position: absolute;
+    padding: 0 1em;
+    height: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .banner {
@@ -44,8 +48,33 @@ header {
 
 .banner-content {
     position: absolute;
-    bottom: 0;
+    top:0;
     width: 100%;
+}
+
+.banner-content-2 {
+    position: absolute;
+    bottom: 2em;
+    margin-left: 7px;
+    width: 100%;
+    color: #fff;
+}
+
+.logo {
+    width: 120px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-70%);
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.logo a{
+    display: block;
 }
 
 .toggle-btn {
@@ -92,7 +121,7 @@ header {
     text-decoration: none;
     height: 40px;
     width: 40px;
-    font-size: 30pt;
+    font-size: 20pt;
     &:before{
         height: 40px;
         width: 40px;
@@ -108,6 +137,13 @@ header {
     margin: 1em;
 }
 
+.donate {
+    margin-left: 3rem;
+    color: white;
+}
+
+
+
 
 
 /**
@@ -121,13 +157,14 @@ header {
         position: relative;
         overflow: hidden;
         width: 100%;
-        z-index: 100;
+        z-index: 1000;
         .sliding-canvas{
             width: 100%;
             height: 100%;
             position: relative;
             transform: translateX(0);
             transition: all 300ms ease-in-out;
+            z-index: 1001;
         }
         
         &[data-state="slide-open"] .sliding-canvas{
@@ -156,8 +193,8 @@ header {
 
 
 
-.pushup {
-    margin-top: 20em;
+@media only screen and (min-height: 20em){
+
 }
 
 
