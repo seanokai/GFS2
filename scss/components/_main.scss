@@ -54,10 +54,13 @@ header {
 
 .banner-content-2 {
     position: absolute;
-    bottom: 2em;
-    margin-left: 7px;
-    width: 100%;
+    top: 45%;
     color: #fff;
+    padding: 1em 1em 1em 2em;
+}
+
+.banner-content-2 h1 {
+    left: 2.5rem;
 }
 
 .logo {
@@ -151,6 +154,14 @@ header {
     margin-bottom: 0;
     padding-left: .2em;
     padding-right: .2em;
+}
+
+
+
+
+.quote {
+
+    background-color: #000;
 }
 
 @media only screen and (min-width: 18em){
