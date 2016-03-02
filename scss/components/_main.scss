@@ -61,12 +61,12 @@ header {
 }
 
 .logo {
-    width: 120px;
+    width: 110px;
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-70%);
+    top: 48%;
+    transform: translate(-50%,-110%);
 }
 
 .logo-img {
@@ -96,7 +96,7 @@ header {
         text-decoration: none;
         list-style-type: none;
         font-weight: bold;
-        font-size: 20pt;
+        font-size: 11pt;
         &:hover a{
             text-transform: none;
             border: 3px solid $yellow;
@@ -138,9 +138,59 @@ header {
 }
 
 .donate {
-    margin-left: 3rem;
+    position: absolute;
+    margin: 0;
+    top: 7%;
+    right: 3%;
     color: white;
 }
+
+.donate h1 {
+    font-size: 1em;
+}
+
+
+@media only screen and (min-width: 25em){
+
+
+ .logo {
+
+    top: 36%;
+ }
+
+}
+
+@media only screen and (min-width: 36em){
+
+    .logo {
+        width: 130px;
+        top:29%;
+
+
+    }
+
+}
+
+    @media only screen and (min-width: 49em){
+
+    .logo {
+        top: 21%;
+
+    }
+
+}
+
+    @media only screen and (min-width: 60em){
+
+    .logo {
+        top:16%;
+
+    }
+
+}
+
+
+
 
 
 
@@ -192,10 +242,6 @@ header {
 }// @media query
 
 
-
-@media only screen and (min-height: 20em){
-
-}
 
 
 @media only screen and (min-height: 60em){
