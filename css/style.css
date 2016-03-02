@@ -167,16 +167,39 @@ header {
   margin: 0;
   top: 7%;
   right: 3%;
-  color: white;
+  color: #ffd710;
+  border: 2px solid #ffd710;
 }
 
 .donate h1 {
   font-size: 1em;
+  margin-bottom: 0;
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
+@media only screen and (min-width: 18em) {
+  .donate {
+    position: absolute;
+    margin: 0;
+    top: 3%;
+    right: 3%;
+    color: #ffd710;
+    border: 2px solid #ffd710;
+  }
 }
 
 @media only screen and (min-width: 25em) {
   .logo {
     top: 36%;
+  }
+  .donate {
+    position: absolute;
+    margin: 0;
+    top: 3%;
+    right: 3%;
+    color: #ffd710;
+    border: 2px solid #ffd710;
   }
 }
 
